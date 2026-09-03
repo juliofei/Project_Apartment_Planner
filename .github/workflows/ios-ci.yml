@@ -1,0 +1,50 @@
+name: Native iOS verification
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  native-ios:
+    runs-on: macos-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Print Apple toolchain information
+        run: |
+          sw_vers
+          xcodebuild -version
+          xcrun swift --version
+
+      - name: Verify project and shared scheme
+        run: |
+          test -d ApartmentPlanner.xcodeproj
+          test -f ApartmentPlanner.xcodeproj/xcshareddata/xcschemes/ApartmentPlanner.xcscheme
+          xcodebuild -project ApartmentPlanner.xcodeproj -list
+
+      - name: Build for iOS Simulator
+        run: |
+          xcodebuild \
+            -project ApartmentPlanner.xcodeproj \
+            -scheme ApartmentPlanner \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO \
+            clean build
+
+      - name: Run XCTest target
+        run: |
+          set -euo pipefail
+          simulator_id="$(xcrun simctl list devices available | awk -F '[()]' '/iPhone/ && /(Shutdown|Booted)/ { print $2; exit }')"
+          test -n "$simulator_id"
+          xcodebuild \
+            -project ApartmentPlanner.xcodeproj \
+            -scheme ApartmentPlanner \
+            -destination "platform=iOS Simulator,id=$simulator_id" \
+            CODE_SIGNING_ALLOWED=NO \
+            test
