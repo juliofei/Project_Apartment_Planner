@@ -36,24 +36,24 @@
 
 /* Begin PBXFileReference section */
 		000000000000000000000401 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text.md; path = README.md; sourceTree = "<group>"; };
-		000000000000000000000403 /* ApartmentPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/ApartmentPlannerApp.swift; sourceTree = "<group>"; };
-		000000000000000000000404 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/RootView.swift; sourceTree = "<group>"; };
-		000000000000000000000405 /* RootNavigationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/RootNavigationState.swift; sourceTree = "<group>"; };
-		000000000000000000000406 /* FeatureShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/FeatureShellView.swift; sourceTree = "<group>"; };
-		000000000000000000000407 /* ApartmentPlannerTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/DesignSystem/ApartmentPlannerTheme.swift; sourceTree = "<group>"; };
-		000000000000000000000408 /* ApartmentPlannerTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/DesignSystem/ApartmentPlannerTypography.swift; sourceTree = "<group>"; };
-		000000000000000000000409 /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Models/AppTab.swift; sourceTree = "<group>"; };
-		00000000000000000000040A /* TaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Models/TaskStatus.swift; sourceTree = "<group>"; };
-		00000000000000000000040B /* ProjectRole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Models/ProjectRole.swift; sourceTree = "<group>"; };
-		00000000000000000000040C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Home/HomeView.swift; sourceTree = "<group>"; };
-		00000000000000000000040D /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Tasks/TasksView.swift; sourceTree = "<group>"; };
-		00000000000000000000040E /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Plan/PlanView.swift; sourceTree = "<group>"; };
-		00000000000000000000040F /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Budget/BudgetView.swift; sourceTree = "<group>"; };
-		000000000000000000000410 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Calendar/CalendarView.swift; sourceTree = "<group>"; };
-		000000000000000000000411 /* ARCHITECTURE.md */ = {isa = PBXFileReference; lastKnownFileType = text.md; path = docs/ARCHITECTURE.md; sourceTree = "<group>"; };
-		000000000000000000000412 /* DATA_MODEL.md */ = {isa = PBXFileReference; lastKnownFileType = text.md; path = docs/DATA_MODEL.md; sourceTree = "<group>"; };
-		000000000000000000000413 /* DECISIONS.md */ = {isa = PBXFileReference; lastKnownFileType = text.md; path = docs/DECISIONS.md; sourceTree = "<group>"; };
-		000000000000000000000414 /* ApartmentPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests/ApartmentPlannerTests/ApartmentPlannerTests.swift; sourceTree = "<group>"; };
+		000000000000000000000403 /* ApartmentPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentPlannerApp.swift; sourceTree = "<group>"; };
+		000000000000000000000404 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		000000000000000000000405 /* RootNavigationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationState.swift; sourceTree = "<group>"; };
+		000000000000000000000406 /* FeatureShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureShellView.swift; sourceTree = "<group>"; };
+		000000000000000000000407 /* ApartmentPlannerTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentPlannerTheme.swift; sourceTree = "<group>"; };
+		000000000000000000000408 /* ApartmentPlannerTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentPlannerTypography.swift; sourceTree = "<group>"; };
+		000000000000000000000409 /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTab.swift; sourceTree = "<group>"; };
+		00000000000000000000040A /* TaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatus.swift; sourceTree = "<group>"; };
+		00000000000000000000040B /* ProjectRole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRole.swift; sourceTree = "<group>"; };
+		00000000000000000000040C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		00000000000000000000040D /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		00000000000000000000040E /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
+		00000000000000000000040F /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
+		000000000000000000000410 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		000000000000000000000411 /* ARCHITECTURE.md */ = {isa = PBXFileReference; lastKnownFileType = text.md; path = ARCHITECTURE.md; sourceTree = "<group>"; };
+		000000000000000000000412 /* DATA_MODEL.md */ = {isa = PBXFileReference; lastKnownFileType = text.md; path = DATA_MODEL.md; sourceTree = "<group>"; };
+		000000000000000000000413 /* DECISIONS.md */ = {isa = PBXFileReference; lastKnownFileType = text.md; path = DECISIONS.md; sourceTree = "<group>"; };
+		000000000000000000000414 /* ApartmentPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentPlannerTests.swift; sourceTree = "<group>"; };
 		000000000000000000000501 /* ApartmentPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApartmentPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000000000000000000000502 /* ApartmentPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApartmentPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */

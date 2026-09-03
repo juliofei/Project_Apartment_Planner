@@ -29,6 +29,7 @@ jobs:
 
       - name: Build for iOS Simulator
         run: |
+          set -o pipefail
           xcodebuild \
             -project ApartmentPlanner.xcodeproj \
             -scheme ApartmentPlanner \
