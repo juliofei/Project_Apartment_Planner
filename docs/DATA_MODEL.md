@@ -22,7 +22,7 @@ Persistence may split one conceptual entity into multiple records if the chosen 
 | Category | stored entity | shared project data | Belongs to one `Project`. Owns the category name, icon, sort order, planning dates, and archive flag. |
 | Task | stored entity | shared project data | Belongs to one `Project` and one `Category`. Stores lifecycle status, title, notes, due date, estimate, priority, shopping flag, cost estimate, and attachment references. Persist enough history to know when it was completed or reopened. |
 | TaskAssignment | join entity | shared project data | Connects a `Task` to a `User`. Multiple assignees are represented by multiple rows; do not use a fake combined person. |
-| TaskDependency | join entity | shared project data | Directed edge between two `Task` records in the same project. The dependency graph is owned by `Core/Rules`. |
+| TaskDependency | join entity | shared project data | Directed edge between two `Task` records in the same project. Stored as `taskId depends on dependsOnTaskId`, which means `dependsOnTaskId -> taskId`. The dependency graph is owned by `Core/Rules/DependencyRules.swift`. |
 | ShoppingItem | stored entity | shared project data | Wishlist-style shopping work item. May belong to a project directly or be linked to a task when lifecycle behavior is needed. |
 | BudgetLine | stored entity | shared project data | Planned budget bucket. Stable internal IDs are the canonical round-trip key for Excel import and export. |
 | Expense | stored entity | shared project data | Actual spend record. May belong to a `BudgetLine`, reference a shopping purchase, and point to a receipt attachment. |
@@ -36,6 +36,7 @@ Persistence may split one conceptual entity into multiple records if the chosen 
 - `ProjectMember` is the canonical join between a user and a project.
 - `TaskAssignment` is the canonical join between a task and a user.
 - `TaskDependency` is a directed edge between tasks, not a local view-only rule.
+- `TaskDependency.taskId` is the dependent task and `TaskDependency.dependsOnTaskId` is the prerequisite task.
 - `ShoppingItem` may stay standalone or link to a task when it needs lifecycle or assignment behavior.
 - `BudgetLine` should never be overwritten by actual spend; `Expense` records carry the real spend.
 - `Attachment` metadata is shared, but the file bytes or asset payload are external.

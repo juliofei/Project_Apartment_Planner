@@ -19,6 +19,8 @@
 		000000000000000000000610 /* ApartmentPlannerDomainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000415 /* ApartmentPlannerDomainModels.swift */; };
 		000000000000000000000611 /* SampleApartmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000416 /* SampleApartmentData.swift */; };
 		000000000000000000000612 /* SampleApartmentDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000417 /* SampleApartmentDataTests.swift */; };
+		000000000000000000000613 /* DependencyRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000418 /* DependencyRules.swift */; };
+		000000000000000000000614 /* DependencyRulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000419 /* DependencyRulesTests.swift */; };
 		00000000000000000000060A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000040C /* HomeView.swift */; };
 		00000000000000000000060B /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000040D /* TasksView.swift */; };
 		00000000000000000000060C /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000040E /* PlanView.swift */; };
@@ -50,6 +52,7 @@
 		00000000000000000000040B /* ProjectRole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRole.swift; sourceTree = "<group>"; };
 		000000000000000000000415 /* ApartmentPlannerDomainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentPlannerDomainModels.swift; sourceTree = "<group>"; };
 		000000000000000000000416 /* SampleApartmentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApartmentData.swift; sourceTree = "<group>"; };
+		000000000000000000000418 /* DependencyRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyRules.swift; sourceTree = "<group>"; };
 		00000000000000000000040C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		00000000000000000000040D /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 		00000000000000000000040E /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 		000000000000000000000413 /* DECISIONS.md */ = {isa = PBXFileReference; lastKnownFileType = text.md; path = DECISIONS.md; sourceTree = "<group>"; };
 		000000000000000000000414 /* ApartmentPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentPlannerTests.swift; sourceTree = "<group>"; };
 		000000000000000000000417 /* SampleApartmentDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApartmentDataTests.swift; sourceTree = "<group>"; };
+		000000000000000000000419 /* DependencyRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyRulesTests.swift; sourceTree = "<group>"; };
 		000000000000000000000501 /* ApartmentPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApartmentPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000000000000000000000502 /* ApartmentPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApartmentPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -126,6 +130,7 @@
 		000000000000000000000306 /* Rules */ = {
 			isa = PBXGroup;
 			children = (
+				000000000000000000000418 /* DependencyRules.swift */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 			children = (
 				000000000000000000000414 /* ApartmentPlannerTests.swift */,
 				000000000000000000000417 /* SampleApartmentDataTests.swift */,
+				000000000000000000000419 /* DependencyRulesTests.swift */,
 			);
 			path = ApartmentPlannerTests;
 			sourceTree = "<group>";
@@ -397,6 +403,7 @@
 				000000000000000000000609 /* ProjectRole.swift in Sources */,
 				000000000000000000000610 /* ApartmentPlannerDomainModels.swift in Sources */,
 				000000000000000000000611 /* SampleApartmentData.swift in Sources */,
+				000000000000000000000613 /* DependencyRules.swift in Sources */,
 				00000000000000000000060A /* HomeView.swift in Sources */,
 				00000000000000000000060B /* TasksView.swift in Sources */,
 				00000000000000000000060C /* PlanView.swift in Sources */,
@@ -411,6 +418,7 @@
 			files = (
 				00000000000000000000060F /* ApartmentPlannerTests.swift in Sources */,
 				000000000000000000000612 /* SampleApartmentDataTests.swift in Sources */,
+				000000000000000000000614 /* DependencyRulesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

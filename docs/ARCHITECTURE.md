@@ -118,7 +118,7 @@ The exact names may change, but the grouping should not.
 
 | Rule area | Owns | Notes |
 | --- | --- | --- |
-| DependencyRules | readiness, validation, duplicate rejection, cycle rejection, Add Before / Add After edge semantics, dependency removal consequences | single source of truth for task graph behavior |
+| DependencyRules | readiness, validation, duplicate rejection, cycle rejection, Add Before / Add After edge semantics, dependency removal consequences | single source of truth for task graph behavior in `Core/Rules/DependencyRules.swift` |
 | PlanningRules | category progress, remaining workload, missing estimate warnings, longest remaining dependency chain, calendar days remaining, planned apartment days, schedule buffer, health classification, must-start-by, Time Critical, planning explanations | no screen should recalculate schedule health |
 | BudgetRules | spent totals, remaining estimated, anti-double-counting, projected final cost, projected remaining / overrun, budget warnings, purchase-to-expense consequences, paid-by totals, missing estimate warnings | no screen should recalculate budget math |
 | PermissionRules | can view project, can edit settings, can invite, role changes, member removal, category / task / budget / expense / visit access | role checks stay centralized |
@@ -126,6 +126,8 @@ The exact names may change, but the grouping should not.
 | CalendarRules | visit validation, day grouping, Apple Calendar sync eligibility, event update / delete mapping, permission-denied behavior, sync-failure behavior | calendar UI displays results only |
 
 If a derived value can be computed from domain state, it belongs here or in a pure helper under `Core/Rules`.
+
+`Core/Rules/DependencyRules.swift` owns dependency graph validation, readiness derivation, direct relationship lookups, and edge-construction helpers.
 
 ## 8. UI Composition and Routing
 
