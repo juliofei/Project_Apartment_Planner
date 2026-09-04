@@ -21,6 +21,12 @@
 		000000000000000000000612 /* SampleApartmentDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000417 /* SampleApartmentDataTests.swift */; };
 		000000000000000000000613 /* DependencyRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000418 /* DependencyRules.swift */; };
 		000000000000000000000614 /* DependencyRulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000419 /* DependencyRulesTests.swift */; };
+		000000000000000000000615 /* TaskDisplayHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000420 /* TaskDisplayHelpers.swift */; };
+		000000000000000000000616 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000421 /* TaskListViewModel.swift */; };
+		000000000000000000000617 /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000422 /* TaskCardView.swift */; };
+		000000000000000000000618 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000423 /* TaskDetailView.swift */; };
+		000000000000000000000619 /* QuickAddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000424 /* QuickAddTaskView.swift */; };
+		00000000000000000000061A /* TaskListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000425 /* TaskListViewModelTests.swift */; };
 		00000000000000000000060A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000040C /* HomeView.swift */; };
 		00000000000000000000060B /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000040D /* TasksView.swift */; };
 		00000000000000000000060C /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000040E /* PlanView.swift */; };
@@ -55,6 +61,11 @@
 		000000000000000000000418 /* DependencyRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyRules.swift; sourceTree = "<group>"; };
 		00000000000000000000040C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		00000000000000000000040D /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		000000000000000000000420 /* TaskDisplayHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDisplayHelpers.swift; sourceTree = "<group>"; };
+		000000000000000000000421 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		000000000000000000000422 /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
+		000000000000000000000423 /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
+		000000000000000000000424 /* QuickAddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAddTaskView.swift; sourceTree = "<group>"; };
 		00000000000000000000040E /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
 		00000000000000000000040F /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
 		000000000000000000000410 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -64,6 +75,7 @@
 		000000000000000000000414 /* ApartmentPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentPlannerTests.swift; sourceTree = "<group>"; };
 		000000000000000000000417 /* SampleApartmentDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApartmentDataTests.swift; sourceTree = "<group>"; };
 		000000000000000000000419 /* DependencyRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyRulesTests.swift; sourceTree = "<group>"; };
+		000000000000000000000425 /* TaskListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModelTests.swift; sourceTree = "<group>"; };
 		000000000000000000000501 /* ApartmentPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApartmentPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000000000000000000000502 /* ApartmentPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApartmentPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -176,6 +188,11 @@
 			isa = PBXGroup;
 			children = (
 				00000000000000000000040D /* TasksView.swift */,
+				000000000000000000000421 /* TaskListViewModel.swift */,
+				000000000000000000000420 /* TaskDisplayHelpers.swift */,
+				000000000000000000000422 /* TaskCardView.swift */,
+				000000000000000000000423 /* TaskDetailView.swift */,
+				000000000000000000000424 /* QuickAddTaskView.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -289,6 +306,7 @@
 				000000000000000000000414 /* ApartmentPlannerTests.swift */,
 				000000000000000000000417 /* SampleApartmentDataTests.swift */,
 				000000000000000000000419 /* DependencyRulesTests.swift */,
+				000000000000000000000425 /* TaskListViewModelTests.swift */,
 			);
 			path = ApartmentPlannerTests;
 			sourceTree = "<group>";
@@ -404,6 +422,11 @@
 				000000000000000000000610 /* ApartmentPlannerDomainModels.swift in Sources */,
 				000000000000000000000611 /* SampleApartmentData.swift in Sources */,
 				000000000000000000000613 /* DependencyRules.swift in Sources */,
+				000000000000000000000615 /* TaskDisplayHelpers.swift in Sources */,
+				000000000000000000000616 /* TaskListViewModel.swift in Sources */,
+				000000000000000000000617 /* TaskCardView.swift in Sources */,
+				000000000000000000000618 /* TaskDetailView.swift in Sources */,
+				000000000000000000000619 /* QuickAddTaskView.swift in Sources */,
 				00000000000000000000060A /* HomeView.swift in Sources */,
 				00000000000000000000060B /* TasksView.swift in Sources */,
 				00000000000000000000060C /* PlanView.swift in Sources */,
@@ -419,6 +442,7 @@
 				00000000000000000000060F /* ApartmentPlannerTests.swift in Sources */,
 				000000000000000000000612 /* SampleApartmentDataTests.swift in Sources */,
 				000000000000000000000614 /* DependencyRulesTests.swift in Sources */,
+				00000000000000000000061A /* TaskListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
