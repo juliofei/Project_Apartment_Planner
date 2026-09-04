@@ -1,6 +1,6 @@
 # Apartment Planner
 
-Task 00 establishes the repository baseline for a native iPhone apartment planning app.
+Task 00 established the repository shell. TECH-01 now defines the technical architecture and build sequence before feature implementation begins.
 
 Current stage:
 
@@ -9,7 +9,8 @@ Current stage:
 - centralized design tokens
 - canonical terminology for core enums
 - minimal unit test target
-- no third-party dependencies
+- no third-party dependencies yet
+- architecture, data-model, and decision docs now describe the implementation contract
 
 ## Open and build
 
@@ -19,17 +20,19 @@ Current stage:
 
 ## Repository structure
 
-- `App/` - app entry point, root navigation state, and shell view composition
-- `Core/Models/` - canonical application terminology
+- `App/` - app entry point, root navigation state, shell view composition, and future global add routing
+- `Core/Models/` - canonical application terminology and shared value types
+- `Core/Rules/` - future pure rule engines
+- `Core/Services/` - shared services, sample data, and mapping helpers
 - `Core/DesignSystem/` - centralized colors, spacing, corner radius, and typography
-- `Features/Home/` - home tab placeholder
-- `Features/Tasks/` - tasks tab placeholder
-- `Features/Plan/` - plan tab placeholder
-- `Features/Budget/` - budget tab placeholder
-- `Features/Calendar/` - calendar tab placeholder
-- `Data/` - reserved for future persistence and repository code
-- `Integrations/` - reserved for future Apple Calendar, Excel, and notification adapters
-- `docs/` - architecture, data-model, and decision log
+- `Features/Home/` - home tab composition and feature-local state
+- `Features/Tasks/` - tasks tab composition and task flows
+- `Features/Plan/` - plan tab composition and planning surfaces
+- `Features/Budget/` - budget tab composition, shopping, and expense flows
+- `Features/Calendar/` - calendar tab composition and visit flows
+- `Data/` - persistence, repositories, and migrations
+- `Integrations/` - Apple Calendar, Excel, and notification adapters
+- `docs/` - product spec, architecture, data-model, and decision log
 
 ## Architecture rules
 
@@ -38,18 +41,19 @@ Current stage:
 - Keep directories shallow.
 - Prefer Apple-native frameworks.
 - Do not add infrastructure before it is approved.
+- Keep repositories thin and aggregate-oriented.
 
 ## Where to start
 
 1. `docs/ARCHITECTURE.md`
 2. `docs/DATA_MODEL.md`
-3. `App/RootView.swift`
-4. `Core/DesignSystem/ApartmentPlannerTheme.swift`
-5. `Core/Models/AppTab.swift`
+3. `docs/DECISIONS.md`
+4. `docs/PRODUCT_SPEC.md`
+5. `App/RootView.swift`
 
 ## Testing
 
-The repository uses one primary unit test target for shell and terminology checks. Future tests should stay focused on high-risk rules and avoid duplicate UI coverage.
+The repository uses one primary unit test target for shell and terminology checks. Future tests should stay focused on high-risk rules, mappers, and repository integration, and avoid duplicate UI coverage or snapshot noise.
 
 ## Native verification
 
@@ -57,7 +61,7 @@ Development may occur from Windows/VS Code, but native iOS compilation and XCTes
 
 ## Git workflow
 
-- Keep Task 00 changes intentional and bounded.
+- Keep Task 00 and TECH-01 changes intentional and bounded.
 - Do not commit generated build output, IDE state, secrets, or temp files.
 - Preserve unrelated work if the worktree is dirty.
 - Treat superseded code as history, not as a parallel implementation.
