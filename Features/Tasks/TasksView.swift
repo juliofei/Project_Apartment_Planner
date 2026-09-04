@@ -56,7 +56,7 @@ struct TasksView: View {
             }
         }
         .navigationDestination(for: UUID.self) { taskID in
-            TaskDetailView(taskID: taskID, viewModel: viewModel)
+            TaskDetailView(viewModel: viewModel, taskID: taskID)
         }
         .sheet(isPresented: $showingQuickAdd) {
             QuickAddTaskView(viewModel: viewModel)
